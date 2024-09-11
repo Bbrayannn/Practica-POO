@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package POO2024a;
 
-/**
- *
- * @author BRAYAN STEVEN
- */
+
 public class ejercisio6 {
-    
+    public static void main(String[] args) {
+        // un valor decimal 
+        double valord= 10.75;
+        // le quitamos la parte decimal con el int 
+        int valorInt = (int) valord;
+        
+        System.out.println("valor de double:"+valord);
+        System.out.println("valor de int:"+valorInt);
+    }
 }

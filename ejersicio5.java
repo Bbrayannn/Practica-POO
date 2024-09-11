@@ -10,7 +10,7 @@ public class ejersicio5 {
         System.out.print("Escribe tu edad:");
         int a= sc.nextInt();
         
-        System.out.println("Me llamo"+nombre+"y tengo"+a);
+        System.out.println("Me llamo"+nombre+"y tengo"+a+"años");
     }
     
 }
