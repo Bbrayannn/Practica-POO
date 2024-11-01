@@ -1,19 +1,21 @@
 package ejercisio2;
 
-public class Prueba {
+public class Prueba  {
 
+    private static Object ejercisio1;
     public static void main(String[] args) {
+       
+        ejercisio2.Cuadrado cuadrado = new ejercisio2.Cuadrado(5,"v","s");
+        System.out.println("area cuadrado" + cuadrado.calcularArea());
+        System.out.println("Perimetro del cuadrado" + cuadrado.calcularPerimetro());
 
-        Empleado empleado = new Empleado("Juan", "1435", 45, true, 300.0);
-        System.out.println("Datos de empleado");
-        System.out.println(empleado);
-        System.out.println("Clasificasio" + empleado.Clasifica());
-        empleado.subiralario(10);
-        System.out.println("Salario despues de aumento" + empleado);
-
-        Programador programador = new Programador(10,"java","brayan","afrvvfd",22,false,33.0);
-        System.out.println("\nDatos del Programador:");
-        System.out.println(programador);
-        System.out.println("Salario calculado: " + programador.calculaSalario());
+        ejercisio2.Triangulo triangulo = new ejercisio2.Triangulo(5,4,5,4,3,"rojo","cd");
+        System.out.println("Triangulo");
+        System.out.println("area" + triangulo.calcularArea());
+        System.out.println("perimetro" + triangulo.calcularPerimetro());
+  
+        
     }
+
+   
 }

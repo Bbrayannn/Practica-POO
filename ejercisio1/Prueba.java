@@ -1,21 +1,29 @@
 package ejercisio1;
 
-public class Prueba  {
+public class Prueba implements iDatos {
 
-    private static Object ejercisio1;
     public static void main(String[] args) {
-       
-        ejercisio1.Cuadrado cuadrado = new ejercisio1.Cuadrado(5,"v","s");
-        System.out.println("area cuadrado" + cuadrado.calcularArea());
-        System.out.println("Perimetro del cuadrado" + cuadrado.calcularPerimetro());
+        productoFresco pf = new productoFresco("2006","mexico","2025",12);
+        productoRefrigerados pr = new productoRefrigerados(232,23,43,"españa","2343",32);
+        productoCongelado pc = new productoCongelado(2006,"bogota",32.7);
 
-        ejercisio1.Triangulo triangulo = new ejercisio1.Triangulo(5,4,5,4,3,"rojo","cd");
-        System.out.println("Triangulo");
-        System.out.println("area" + triangulo.calcularArea());
-        System.out.println("perimetro" + triangulo.calcularPerimetro());
-  
-        
+        pf.MuestraPais();
+        pf.MuestraPais();
+        pr.MuestraPais();
+        pc.MuestraPais();
+
+     
+     
+
     }
 
-   
+    @Override
+    public void MuestraPais() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void MUestraFechaCaducidad() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
